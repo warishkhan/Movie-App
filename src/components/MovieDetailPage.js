@@ -80,9 +80,9 @@ const MovieDetailPage = () => {
                 src={`https://image.tmdb.org/t/p/w500/${actor.profile_path}`}
               />
               <Card.Body>
-                <Card.Title className="text-white">{actor.name}</Card.Title>
+                <Card.Title className="text-white">{(actor.name).substring(0,10)}</Card.Title>
                 <Card.Text className="text-white">
-                  Character: {actor.character} / {actor.original_name}
+                  Character: {(actor.character).substring(0,10)} / {(actor.original_name).substring(0,10)}
                 </Card.Text>
               </Card.Body>
             </Card>
