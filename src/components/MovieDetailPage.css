@@ -1,0 +1,24 @@
+.moviesDetails{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(15, 13, 13);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.scrollable{
+    display: flex;
+    justify-content: space-evenly !important;
+    align-items: center;
+}
+
+@media screen and (max-width:768px) {
+    .moviesDetails{
+        flex-direction: column;
+    }
+    .scrollable{
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+}
